@@ -45,3 +45,26 @@ def test_post_pet():
     assert response_body['category']['name'] == pet_category_name
     assert response_body['tags'][0]['name'] == pet_tag_name
 
+def test_get_pet():
+    # configura
+    # dados de entrada e saida / resultado esperado estão na seção de atributos antes das funções
+
+    # executa
+    response = requests.get(
+        url=f'{url}/{pet_id}',  # chama o endereço do get / consulta passando o código do animal
+        headers=headers
+        # nã otem corpo da mensagem / body
+
+    )
+        
+
+    # valida
+    response_body = response.json()
+
+    assert response.status_code == 200
+    assert response_body['name'] == pet_name
+    assert response_body['category']['id'] == pet_category_id
+    assert response_body['tags'][0]['id'] == pet_tag_id
+    assert response_body['status'] == pet_status
+
+    
