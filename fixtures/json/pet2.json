@@ -1,0 +1,18 @@
+{
+  "id": 30488454,
+  "category": {
+    "id": 1,
+    "name": "cat"
+  },
+  "name": "Lagertha",
+  "photoUrls": [
+    ""
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "vacinado"
+    }
+  ],
+  "status": "sold"
+}

@@ -1,0 +1,4 @@
+pet_id,category_id,category_name,pet_name,tags,status
+30488452,2,cat,Lala,1-vacinado;2-vermifugado,available
+30488453,3,dog,Ozzy,3-raro,available
+30488454,4,fish,Andreas,3-raro,available
